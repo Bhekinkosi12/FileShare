@@ -22,7 +22,7 @@ namespace FileShare1.ViewModel
             set
             {
                 ipCaption = value;
-                OnPropertyChanged(nameof(IPCaption));
+                OnPropertyChanged("IPCaption");
             }
         }
 
@@ -66,6 +66,7 @@ namespace FileShare1.ViewModel
         {
             switch (pageName)
             {
+            
                 case "Share":
                     {
                         var masterDetailpage = App.Current.MainPage as MasterDetailPage;
@@ -80,6 +81,8 @@ namespace FileShare1.ViewModel
                         masterDetailpage.IsPresented = false;
                         break;
                     }
+                    
+                    
             }
         }
     }
